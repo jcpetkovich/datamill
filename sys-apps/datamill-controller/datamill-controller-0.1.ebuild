@@ -47,7 +47,7 @@ src_install() {
     fi
     
 
-    cp "${S}/controller/update_local_code.sh"   "${D}/eval-lab/"
+    cp "${S}/controller/remerge_packages.sh"    "${D}/eval-lab/"
     cp "${S}/controller/worker.py"              "${D}/eval-lab/"
     cp "${S}/controller/handle_ini.py"          "${D}/eval-lab/"
     cp "${S}/controller/controller_environment" "${D}/eval-lab/"
