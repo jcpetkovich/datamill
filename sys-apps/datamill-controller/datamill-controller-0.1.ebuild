@@ -11,7 +11,7 @@ SRC_URI="ftp://mini.resl.uwaterloo.ca/datamill-worker-${PV}.tar.gz"
 # Add license later
 # LICENSE=""
 SLOT="0"
-KEYWORDS="~x86 amd64"
+KEYWORDS="x86 amd64"
 RDEPEND=">=dev-python/pyyaml-3.09"
 
 S="${WORKDIR}/datamill-worker-${PV}"
@@ -49,6 +49,7 @@ src_install() {
 
     cp "${S}/controller/remerge_packages.sh"    "${D}/eval-lab/"
     cp "${S}/controller/worker.py"              "${D}/eval-lab/"
+    cp "${S}/controller/get_worker_data.py"     "${D}/eval-lab/"
     cp "${S}/controller/handle_ini.py"          "${D}/eval-lab/"
     cp "${S}/controller/controller_environment" "${D}/eval-lab/"
     cp "${S}/controller/"*.ini                  "${D}/eval-lab/"
