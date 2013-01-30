@@ -11,7 +11,7 @@ SRC_URI="ftp://mini.resl.uwaterloo.ca/datamill-worker-${PV}.tar.gz"
 # Add license later
 # LICENSE=""
 SLOT="0"
-KEYWORDS="x86 amd64"
+KEYWORDS="x86 amd64 arm"
 RDEPEND=">=dev-python/pyyaml-3.09"
 
 S="${WORKDIR}/datamill-worker-${PV}"
